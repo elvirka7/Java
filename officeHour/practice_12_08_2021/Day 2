@@ -1,0 +1,190 @@
+Office Hours 12/08/2021
+
+Practice Topics:
+							- String Methods
+
+									charAt length
+
+									toUpperCase() toLowerCase() trim()
+
+									replace() replaceFirst()
+
+									lastIndexOf() indexOf
+
+									substring
+
+									isEmpty
+
+									equals Vs == Operator
+
+									equalsIgnoreCase
+
+							- MultiBranch If :  If(...){
+							                    }else If(...){
+							                    }else{
+							                    }
+
+							- Nested If Else :  If(.....){
+							                        If(...){
+							                        else{
+
+							                         }
+							                          }
+							                   else{
+
+							                     }
+							                    }
+
+							- Ternary : result: (statement)? "true statement" : "false statement"
+
+
+							- Switch :  String str="...";
+							            switch(str){
+							               case ".." :
+							                  sout();
+							                   break;
+							               case ".." :
+                                              sout();
+							               default:
+							                  break;
+							            }
+
+
+
+							- For Loop : for (statement 1; statement 2; statement 3) {
+                                             // code block to be executed
+                                            }
+
+                                         Statement 1(initialization) is executed (one time) before the execution of the code block.
+
+                                         Statement 2(condition) defines the condition for executing the code block.
+
+                                         Statement 3(Iteration) is executed (every time) after the code block has been executed.
+
+
+
+    Practices:
+
+
+                Topic:   MultiBranch If
+
+                          (FirtsTwoletter)
+					/* (substring-length-isEmpty)
+
+				      Given a string, return the string made of its first two chars, so the String "Hello" yields "He". If the string is shorter than length 2, return whatever there is, so "X" yields "X", and the empty string "" yields the empty string "".
+
+					          Input :"Hello"   → "He"
+					          Input :"abcdefg" → "ab"
+					          Input :"a"	     → "a"
+					          Input :""	     → "It can not be empty"
+         */
+
+				Topic:   Nested If
+
+                    /*    ( Scanner Class can be used )
+
+                             (DonateBlood)
+					        Create a program that accepts age and weight(kg) as int.
+
+					        If age greater than or equal 18 and weight greater than 50 kg give a message
+					        	EXPECTED  :  "You are eligible to donate blood"
+
+					        If age greater than or equal 18 and weight smaller or equal than 50 kg give a message
+					        	EXPECTED  :  "You are not eligible to donate blood"
+
+					        If age is smaller than 18 "Age must be greater than 18"
+					        	EXPECTED  :  "Age must be greater than 18"
+
+      				   */
+
+      			Topic: Ternary (DonateBlood)
+
+      			Topic:   Switch Statements
+
+                          (SwitchEx)
+					/* Create  a program that accepts animal as String
+
+							DOG 	- domestic animal
+							CAT 	- domestic animal
+							TIGER 	- wild  animal
+
+							For other animal - unknown animal
+
+							INPUT : DOG 		EXPECTED OUTPUT : DOG is domestic animal */
+
+                Topic: For Loop
+
+                       Practice 1. Factorial Number
+
+                          /* Write a program that can return the factorial number of any given number
+
+                              Ex:
+                                  input: 5
+                                  output: 120  ( because: 5! = 5 * 4 * 3 * 2* 1 = 120 )
+                          */
+
+
+                       Practice 2.  Fibonacci
+
+                        /* Create a program that will give you the Fibonacci numbers up to the x value.
+
+				           Fibonacci is a sequence of number starting from 0, 1 where the following numbers are the sum of the previous 2 numbers
+
+			               Note: Fibonacci numbers are read as index values, so the 0th Fibonacci is 0, 1st value is 1, 2nd value is 1, etc
+
+				          Ex:
+				             Input:
+				               8
+				             Output:
+				               0, 1, 1, 2, 3, 5, 8, 13, 21
+
+				         */
+
+
+                        Practice 3. CatAndDog
+
+				       /* write a program to print true if the string "cat" and "dog" appear the same number of times in the given sentence
+
+                            	Ex:
+                            		sentence = "cat dog dog cat"
+
+                            		output:
+                            			true
+                        */
+
+
+                        Practice 4. Palindrome
+
+                      /*
+                       Write a program that can check if the given String is palindrome
+
+                      			Ex:
+                      				input:
+                      					Level
+
+                      				output:
+                      					true
+
+
+                      				input:
+                      					Anna
+
+                      				output:
+                      					true
+
+                       */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
