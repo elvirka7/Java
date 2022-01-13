@@ -29,3 +29,20 @@ public class Person {
 
 
 }
+/*
+
+  Employee:
+        name, gender, age, jobTitle, id, salary, companyName
+        setInfo(), work(), toString()
+
+
+    Tester
+
+    Developer
+
+    Driver
+
+    Teacher
+
+
+ */

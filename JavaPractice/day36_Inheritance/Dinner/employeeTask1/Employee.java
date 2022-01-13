@@ -30,3 +30,20 @@ public class Employee {
                 '}';
     }
 }
+/*
+
+  Employee:
+        name, gender, age, jobTitle, id, salary, companyName
+        constructor(),  work(), toString()
+
+
+    Tester
+
+    Developer
+
+    Driver
+
+    Teacher
+
+
+ */

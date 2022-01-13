@@ -1,4 +1,4 @@
-package day36_Inheritance.Dinner.sportTask;
+package day36_Inheritance.Dinner.employeeTask1.sportTask;
 
 import org.w3c.dom.ls.LSOutput;
 
@@ -29,3 +29,29 @@ public class Sport {
                 '}';
     }
 }
+/*
+
+Sports Task:
+	1. Create a class named Sport
+			variables:
+				name, numberOfPlayers, numberOfRefere, rules
+
+
+
+			methods:
+				setInfo()
+				play()
+				toString()
+
+		2. create the following sub classes of Sport:
+				1. Basketball
+				2. Baseball
+				3. Football
+				4. AmericanFootball
+
+			Add any missing variables or methods
+
+			Note: you can search them on google
+
+
+ */

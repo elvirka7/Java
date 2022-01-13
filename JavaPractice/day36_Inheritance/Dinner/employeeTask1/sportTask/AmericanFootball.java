@@ -1,4 +1,4 @@
-package day36_Inheritance.Dinner.sportTask;
+package day36_Inheritance.Dinner.employeeTask1.sportTask;
 
 public class AmericanFootball extends Sport{
 
