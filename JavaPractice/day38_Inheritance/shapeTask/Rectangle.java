@@ -2,7 +2,7 @@ package day38_Inheritance.shapeTask;
 
 public class Rectangle extends Shape{
 
-    public double width, length;
+    private double width, length;
 
 
     public Rectangle(String name, double width, double length) {
@@ -10,6 +10,8 @@ public class Rectangle extends Shape{
         this.width = width;
         this.length = length;
     }
+
+
 
     @Override
     public double area() {

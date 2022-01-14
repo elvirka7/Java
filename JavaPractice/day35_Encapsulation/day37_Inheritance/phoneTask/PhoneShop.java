@@ -1,21 +1,18 @@
-package day36_Inheritance.Dinner.phone;
+package day35_Encapsulation.day37_Inheritance.phoneTask;
 
-import day35_Encapsulation.day37_Inheritance.phoneTask.Iphone;
-import day35_Encapsulation.day37_Inheritance.phoneTask.Nokia;
-import day35_Encapsulation.day37_Inheritance.phoneTask.Phone;
-import day35_Encapsulation.day37_Inheritance.phoneTask.Samsung;
-
-public class PhoneObjects {
+public class PhoneShop {
 
     public static void main(String[] args) {
 
-    Iphone iphone = new Iphone("Iphone 12", "6.7 inches", 1000, "Black");
-    Samsung samsung = new Samsung("galaxy S19", "6 inches", 900, "White");
-    Nokia nokia = new Nokia("Brick", "4 inches", 50, "Gray");
+        Iphone iphone = new Iphone("Iphone 12", "6.7 inches", 1000, "Black");
 
-    System.out.println(iphone);
-    System.out.println(samsung);
-    System.out.println(nokia);
+        Samsung samsung = new Samsung("galaxy S19", "6 inches", 900, "White");
+
+        Nokia nokia = new Nokia("Brick", "4 inches", 50, "Gray");
+
+        System.out.println(iphone);
+        System.out.println(samsung);
+        System.out.println(nokia);
 
         iphone.call(911);
         iphone.text(123456789);
@@ -42,6 +39,6 @@ public class PhoneObjects {
         System.out.println( Nokia.hasBattery );
 
 
-}
+    }
 
 }
