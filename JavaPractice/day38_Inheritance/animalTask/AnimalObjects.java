@@ -1,5 +1,7 @@
 package day38_Inheritance.animalTask;
 
+import java.util.Arrays;
+
 public class AnimalObjects {
     public static void main(String[] args) {
 
@@ -14,5 +16,6 @@ public class AnimalObjects {
         }
 
 
+        System.out.println(Arrays.toString(zoo));
     }
 }

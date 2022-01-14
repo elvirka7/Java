@@ -18,7 +18,7 @@ public class Animal {
     }
 
     public String toString() {
-        return "Animal{" +
+        return "\nAnimal{" +
                 "name='" + name + '\'' +
                 ", breed='" + breed + '\'' +
                 ", age=" + age +
