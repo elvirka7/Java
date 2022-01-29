@@ -32,7 +32,7 @@ public class Student extends Person  {
     }
 
     public String toString() {
-        return "Student{" +
+        return "CobinGroup.Student{" +
                 "name='" + getName() + '\'' +
                 ", age=" + getAge() +
                 ", gender=" + getGender() +
@@ -45,7 +45,7 @@ public class Student extends Person  {
 }
 
 /*
-6. Create a sub class of Person named Student
+6. Create a sub class of Person named CobinGroup.Student
 
             Extra variables:
                 studentId, fieldOfStudy

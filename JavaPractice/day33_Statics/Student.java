@@ -44,7 +44,7 @@ public class Student {
 
 
     public String toString() {
-        return "Student{" +
+        return "CobinGroup.Student{" +
                 "name='" + name + '\'' +
                 ", gender=" + gender +
                 ", age=" + age +
@@ -56,8 +56,8 @@ public class Student {
 
 }
 /*
-Student Task:
-		1. Create a class called Student:
+CobinGroup.Student Task:
+		1. Create a class called CobinGroup.Student:
 				Attributes:
 					name, gender, age, studentID, grade
 

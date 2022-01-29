@@ -4,12 +4,12 @@ public class CustomMethodsIntro {
 
     public static void main(String[] args) {
 
-        System.out.println("Test Started");
+        System.out.println("CobinGroup.Test Started");
 
         greeting();
         greeting();
 
-        System.out.println("Test Completed");
+        System.out.println("CobinGroup.Test Completed");
 
 
     }

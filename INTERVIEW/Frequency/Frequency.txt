@@ -1,0 +1,2 @@
+Highest frequency
+Most frequent element

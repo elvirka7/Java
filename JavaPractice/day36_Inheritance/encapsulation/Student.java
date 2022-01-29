@@ -77,7 +77,7 @@ public class Student {
     }
 
     public String toString() {
-        return "Student{" +
+        return "CobinGroup.Student{" +
                 "name='" + name + '\'' +
                 ", age=" + age +
                 ", gender=" + gender +
@@ -90,7 +90,7 @@ public class Student {
 }
 
 /*
-1. Create a class named Student:
+1. Create a class named CobinGroup.Student:
 			private variables:
 				name, age, gender, grade, schoolName
 

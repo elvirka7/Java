@@ -12,7 +12,7 @@ public class StudentInfo {
         boolean isFullTime = true;
         double GPA = 4.0;
 
-        System.out.println("Student Name: " + studentName +
+        System.out.println("CobinGroup.Student Name: " + studentName +
                 "\nAge: " + age +
                 "\nGender: " + gender +
                 "\nSchool Name: " + schoolName +

@@ -4,7 +4,7 @@ Topic: Inheritance Intro
 package name: day36_Inheritance
 
 warmup tasks:
-	1. Create a class named Student:
+	1. Create a class named CobinGroup.Student:
 			private variables:
 				name, age, gender, grade, schoolName
 

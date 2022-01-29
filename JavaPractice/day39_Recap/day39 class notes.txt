@@ -166,7 +166,7 @@ CydeoTask:
             Override the work method
 
 
-    6. Create a sub class of Person named Student
+    6. Create a sub class of Person named CobinGroup.Student
 
             Extra variables:
                 studentId, fieldOfStudy
@@ -181,7 +181,7 @@ CydeoTask:
                 study()
 
     7. Create a class named Cydeo:
-            create objects of Tester, Developer,Teacher, Student
+            create objects of Tester, Developer,Teacher, CobinGroup.Student
 
             test all the functions of each objects
 

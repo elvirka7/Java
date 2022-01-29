@@ -1,0 +1,2 @@
+String count ++
+substring equals method vs replace first contains

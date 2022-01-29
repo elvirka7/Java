@@ -21,7 +21,7 @@ public class Sport {
     }
 
     public String toString() {
-        return "Sport{" +
+        return "CobinGroup.Sport{" +
                 "name='" + name + '\'' +
                 ", numberOfPLayers=" + numberOfPLayers +
                 ", numberOfReferee=" + numberOfReferee +
@@ -32,7 +32,7 @@ public class Sport {
 /*
 
 Sports Task:
-	1. Create a class named Sport
+	1. Create a class named CobinGroup.Sport
 			variables:
 				name, numberOfPlayers, numberOfRefere, rules
 
@@ -43,7 +43,7 @@ Sports Task:
 				play()
 				toString()
 
-		2. create the following sub classes of Sport:
+		2. create the following sub classes of CobinGroup.Sport:
 				1. Basketball
 				2. Baseball
 				3. Football

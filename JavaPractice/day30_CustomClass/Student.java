@@ -17,7 +17,7 @@ public class Student {
     }
 
     public String toString() {
-        return "Student{" +
+        return "CobinGroup.Student{" +
                 "name='" + name + '\'' +
                 ", gender=" + gender +
                 ", age=" + age +

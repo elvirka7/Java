@@ -44,7 +44,7 @@ Car Class:
 		drive(), start(), stop(), toString(), setInfo()
 
 
-Student Class:
+CobinGroup.Student Class:
 
 	Attributes:
 		name, gender, age, studentID

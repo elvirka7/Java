@@ -1,9 +1,9 @@
 package day36_Inheritance.Dinner.phone;
 
-import day35_Encapsulation.day37_Inheritance.phoneTask.Iphone;
-import day35_Encapsulation.day37_Inheritance.phoneTask.Nokia;
-import day35_Encapsulation.day37_Inheritance.phoneTask.Phone;
-import day35_Encapsulation.day37_Inheritance.phoneTask.Samsung;
+import day37_Inheritance.phoneTask.Iphone;
+import day37_Inheritance.phoneTask.Nokia;
+import day37_Inheritance.phoneTask.Phone;
+import day37_Inheritance.phoneTask.Samsung;
 
 public class PhoneObjects {
 

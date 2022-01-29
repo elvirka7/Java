@@ -1,6 +1,6 @@
 Office Hours 12/08/2021
 
-Practice Topics:
+CobinGroup.Practice Topics:
 							- String Methods
 
 									charAt length
@@ -114,7 +114,7 @@ Practice Topics:
 
                 Topic: For Loop
 
-                       Practice 1. Factorial Number
+                       CobinGroup.Practice 1. Factorial Number
 
                           /* Write a program that can return the factorial number of any given number
 
@@ -124,7 +124,7 @@ Practice Topics:
                           */
 
 
-                       Practice 2.  Fibonacci
+                       CobinGroup.Practice 2.  Fibonacci
 
                         /* Create a program that will give you the Fibonacci numbers up to the x value.
 
@@ -141,7 +141,7 @@ Practice Topics:
 				         */
 
 
-                        Practice 3. CatAndDog
+                        CobinGroup.Practice 3. CatAndDog
 
 				       /* write a program to print true if the string "cat" and "dog" appear the same number of times in the given sentence
 
@@ -153,7 +153,7 @@ Practice Topics:
                         */
 
 
-                        Practice 4. Palindrome
+                        CobinGroup.Practice 4. Palindrome
 
                       /*
                        Write a program that can check if the given String is palindrome
