@@ -1,0 +1,352 @@
+Office Hours 01/12/2022
+
+CobinGroup.Practice Topics:
+
+                                - ACCESS MODIFIER -
+
+        How many access modifier we have ?
+
+        - public    --> ALWAYS REACHABLE
+        - protected --> same package OR subclasses(inheritance) in different package
+        - default   --> SAME PACKAGE (package private )
+        - private   --> SAME CLASS
+
+        NOTE :
+            - We can use all of them for Variables( Not Local Variables), Constructor, Methods
+
+            - A top level class can be two access modifiers : public and default
+
+
+            ================================================================================
+
+
+                                     - CUSTOM CLASS -
+
+         /* CustomClassIntro
+
+            What is Class?
+
+                - Template/ Blueprint for Object
+                - We can create class without Object
+                            Arrays.toString();
+
+         */
+
+    public String instanceVariable;   // null
+
+     /*
+            What is instanceVariable?
+
+                - BELONGS OBJECT
+                - it should be creaated in class but outside any type of method
+                - They are attributes of Objects
+                - initilization is not mandatory
+                - we can access via Objects
+
+                        Car c = new Car();
+                            c.instanceVariable="";
+                - They can have some access modifier.We are using only public for now
+         */
+
+    public static String staticVariable="it is initlized when class loading";
+
+ /*
+            What is staticVariable?
+
+                - BELONGS CLASS
+                - Can be used to refer common of all OBJECTS
+                - Gets memory ONLY ONCE ADVANTAGE
+                - we can access via ClassName.staticVariable  // more professional
+                - if we change value staticVaraibale it will AFFECT all Objects
+                            Car c=new Car();
+                            Car.staticVariable="BMW";
+
+                            Car c1=new Car();
+                            Car.staticVariable="Ford";
+                 - Initilization is not Mandatory
+
+
+         */
+        public void setInfo(String instanceVariable){
+            // To set Object attributes
+            this.instanceVariable=instanceVariable;
+
+        }
+
+
+        public void instanceMethod(){
+            /*
+            What is instanceMethod?
+
+            - Instance method can access instance variables/methods ALSO it can access static variables and methods
+
+             */
+            System.out.println("Instance method is Running");
+            staticVariable="Static Variable From Instance Method";
+            staticMethod();
+            instanceVariable="Instance Variable From Instance Method";
+
+            String localVariable="Local Variable From Instance Method";
+            System.out.println("localVariable = " + localVariable);
+            /*
+                        What is localVariable?
+
+                        - BELONGS METHOD
+                        - Defined inside Method
+                        - Exist only related Method
+                        - We can not use access modifier for local variables
+             */
+
+
+        }
+
+            public static void staticMethod() {
+                System.out.println("Static Method is running");
+                staticVariable="Static Variable From Static MEthod";
+                // instanceVariable;   Compiler ERROR
+               //  instanceMethod();
+                /*
+                What is static variable?
+
+                - We can call it via ClassName.staticMethod
+                - We can not use instance variable/methods
+
+                 */
+            }
+
+    @Override
+    public String toString() {
+        return "CustomClassIntro{" +
+                "instanceVariable='" + instanceVariable + '\'' +
+                ", staticVariable='" + staticVariable + '\'' +
+                '}';
+
+
+
+        // to get info about OBJECT
+    }
+
+     ========
+
+     /*
+        What is OBJECT?
+            - Instance of Class
+            - Objects has its own memory
+            - We can not create OBJECT without Class
+
+            Car             c               =               new                              Car();
+         Class         Object                              keyword to create Object        Constructor
+         */
+
+
+        // Create a OBJECT CustomClass
+
+        CustomClassIntro c=new CustomClassIntro();
+        System.out.println("c = " + c);
+        System.out.println("================");
+
+        // Call instance Variable
+        c.instanceVariable="Instance Variable From Main Class";
+        System.out.println("c = " + c);
+        System.out.println("================");
+
+        // Call setInfo
+        c.setInfo("Instance Variable From SetInfo");
+        System.out.println("c = " + c);
+        System.out.println("================");
+
+        // Call staticVariable
+        CustomClassIntro.staticVariable="Static Variable From Main Class via ClassName";
+        //c.staticVariable="Static Variable From Main Class via Object";
+        System.out.println("c = " + c);
+        System.out.println("================");
+
+        // Call staticmethod
+        CustomClassIntro.staticMethod();
+        System.out.println("c = " + c);
+        System.out.println("================");
+
+        // Call instanceMethod
+        c.instanceMethod();
+        System.out.println("c = " + c);
+        System.out.println("================");
+
+        // Create new Object
+        CustomClassIntro c1=new CustomClassIntro();
+        System.out.println("c = " + c1);
+        System.out.println("================");
+
+        // Create new Object
+        CustomClassIntro c2=new CustomClassIntro();
+        System.out.println("c = " + c2);
+        System.out.println("================");
+
+
+        CustomClassIntro.staticVariable="Last value from Main Class";
+        System.out.println("c = " + c);
+        System.out.println("c1 = " + c1);
+        System.out.println("c2 = " + c2);
+
+    }
+
+    ===================
+
+    TASK :
+
+       /*
+          Create a class AnimalSpecies
+			- Create these variables in the class:
+			 	- name (String),
+				- population (int - for practice we can consider 1  unit as 1 million. Ex: population = 20 would represent 20 million ),
+				- growth rate (int - percent number)
+
+		- Create these methods :
+			- setInfo()
+				- parameters: name, population, and growth rate
+				- returns: void
+				- action: assigns the name, population, and growth rate of the object given from the parameters.
+
+		- getName()
+			 no parameters, returns the name variable
+
+		- getPopulation ()
+			 no parameters, returns the population variable
+
+		- getGrowthRate()
+			 no parameters, returns the growth rate variable
+
+		- toString()   generate the toString method as shown in class.
+
+		- Create a class Earth
+
+		- Create AnimalSpecies objects, call  get methods of the objects
+     */
+
+      ==========================================================================================================
+
+                             - CONSTRUCTOR -
+
+   /*
+
+    What is Constructor?
+
+    Constructor:
+              - The constructor is invoked whenever the new keyword is executed
+              - The constructor name must be the same as the class name
+              - - if we don't have any constructor,Compiler can create constructor with no arg
+                - if you create constructor with parameter, compiler does not create no arg
+              - Constructors can be overloaded
+              - Constructors are used to initialize variables
+              - Constructors are invoked to create objects of a class
+
+    - It is a special method to initialize all instance variables with Object
+    - Constructor name MUST be same with ClassName
+    - DOES NOT have RETURN TYPE
+
+    Structure :         AccessModifier ClassName(Parameter){
+                        }
+
+                        ConstructorIntro(){
+                        }
+
+      Type Of Constructor
+
+      No- Arg : - if we don't have any constructor,Compiler can create constructor with no arg
+                - if you create constructor with parameter, compiler does not create no arg
+
+                            public class Rectangle{
+
+                            public int length;
+                            public int width;
+
+                            public Rectangle(){
+                            length=5;
+                            width=4;
+                            }
+                        }
+
+      Parameterized: If you want assign values by yourself you should pass value as arg
+
+                        public class Rectangle{
+
+                            public int length;
+                            public int width;
+
+                            public Rectangle(int length,int width){
+                                this.length=length;
+                                this.width=width;
+                            }
+                        }
+
+       Chaining Constructor  : call one constructor from another One
+
+            - use this() to call another constructor
+            - this() it should in FIRST LINE of Cons
+            - Can not call more than one constructor
+
+      this  :  it refers current Object
+      this():  it refers current Object Constructor.It can take parameter
+
+
+        Constructor OverLoading
+
+        - Types - Number -Order of Parameter you can overload constructor
+
+     */
+
+
+     TASK :
+
+       /*
+
+        - Create a class called BaklavaRecipe
+
+        Attributes:
+
+            String type, int amountLB, double price
+
+        - Add A constructor that can set all the fileds
+
+        Actions:
+           feedback(), static order() , toString()
+
+        - Create a object class called BaklavaObjects
+
+        */
+
+        =========================================================================================
+
+             - STATIC -
+
+    - Declared with 'static' keyword
+    - Belongs to the class, and can be called through the class
+    - Static is applicable for the following:
+                                              •Variables
+                                              •Methods ( Static methods only accept static members )
+                                              •Blocks  (It’s a set of instructions that is run only once when a class is loaded into memory)
+                                              •Class
+
+        - static initializer block -
+
+    - RUN ONLY ONCE before everything when class is loaded
+    - if you have a file, if you should take all data from here you should use
+
+STATIC:
+       - A static variable can be called using an object of a given class
+       - RUN ONLY ONCE before everything when class is loaded
+       - When a method is static it can be called using the class name
+       - Static is applicable for the following:
+                                                       •Variables
+                                                       •Methods ( Static methods only accept static members )
+                                                       •Blocks  (It’s a set of instructions that is run only once when a class is loaded into memory)
+                                                       •Class
+
+Constructor:
+          - The constructor is invoked whenever the new keyword is executed
+          - The constructor name must be the same as the class name
+          - - if we don't have any constructor,Compiler can create constructor with no arg
+            - if you create constructor with parameter, compiler does not create no arg
+          - Constructors can be overloaded
+          - Constructors are used to initialize variables
+          - Constructors are invoked to create objects of a class
+

@@ -1,0 +1,180 @@
+Office Hours 01/26/2022
+
+CobinGroup.Practice Topics: - Final
+                 - Encapsulation
+                 - Inheritance
+                 
+                     
+                                                === FINAL ===
+
+
+--> final : is non-access modifier
+
+            - we can use it with variables - method - class
+
+
+            final variables-- to make constant. it is not possible to assign new value for this variable
+            final methods  -- to prevent overriding
+            final class    -- to prevent inheritance
+
+
+            - variables :
+
+                - if variable is final , its value CAN NOT be modified
+                - when  variable is final we need to initialize it
+                    - constructor
+                    - same statement
+
+                NOTE : if variable is final you can not use setter for this.You can use only getter method.
+                       final variables are immutable.
+                       Read-Only
+
+                    Q: How can you make your variable immutable?
+                    A: I will use  final keyword for my variable
+
+            - methods : A final method can not be overridden
+
+            - class   : A final class can not be extended
+                       
+
+        ==============================================================================================
+
+                                              === ENCAPSULATION ===
+
+--> We try to cut connection between world and our variable to capsulate them
+
+   how can we cut the connection ?
+        - Make it private
+   how can access these variables ?
+        - Getter and setter
+
+
+--> Main Point for encapsulation : Data hiding - protect data - security of data
+
+--> How we perform encapsulation? 
+
+	- Make all class or what you want fields private
+	- Create public SETTER methods
+	- Create public GETTER methods
+
+
+TASK:   /*
+            AdressTask
+
+	        Create a class named Address
+
+			Private variables:
+					street, city, state, zipCode,country
+
+			encapsulate all the fields
+
+			add a constructor that can set all the instances
+				  overload constr with no arg constr
+
+			- if the street name isEmpty or street length is bigger than 50
+			 otherwise
+				 ERROR : Invalid Street
+
+		    - ZipCode length should be equal 5 otherwise
+		    	 ERROR :Invalid ZipCode
+
+			DO NOT duplicate any code fragments
+        */                    
+
+
+        =============================================================================================
+
+
+                                              === INHERITANCE ===
+
+--> Inheritance IS-A RelationShip
+
+      SuperClass -- Parent -- Base  : the class whose features are inherited
+      SubClass   -- Child  -- Derived  : the class that inherits the other class
+
+      What is inherited ?
+      - All public and  protected variables and methods
+      - All default variables and methods (if parent and child are in same package)
+      - Private variables can not be inherited (access with getter and setter)
+      - Constructors are not inherited
+
+
+--> Constructors
+      - In the inheritance , the parent class constructor always executes before child constructor
+
+      - How can we call Parent Class Constructor ?
+            - use super keyword
+            - if child does not call parent class constructor, Java will call parent class default constructor
+            - if parent class has parameterized constructor , child class MUST call it explicitly
+
+            super : refers to parent class object
+            super() :refers Parent class constructor
+                    - must be in first statement in child class constructor
+                    - we can not use this() and super() in the same constructor
+
+--> Overriding
+
+    - Why we need?
+
+        - Sometimes a subclass inherits a method from its superclass,
+          but the method is inadequate for the subclass’s purpose.
+
+        - There MUST be IS A relationship.Do it inside Child class
+
+    - Method overriding rules:
+
+         - method needs to be inherited
+         - the method signature needs to be same
+         - return type: must be the same or co-variant
+         - access modifier can stay the same, or be changed to more 
+           visibility, but not less
+                public > protected > default > private
+
+                - public         public
+                - protected      protected OR public
+                - default        default OR protected OR public
+                - private        CAN NOT BE INHERITED
+
+         - Private , final , static methods can not be OVERRIDDEN
+
+	 - Advantages:
+
+	    - less memory
+	    - less codes
+		- easy to maintain
+		- improves the reusability  
+
+
+   TASK:  
+         /*
+            appTask:
+
+
+        Create a class called MobileApp
+
+            instance variables:
+                name, version
+
+                add a constructor to set all the fields
+
+            instance methods:
+                useTheApp(int minutes), download()
+
+        Create the following sub classes of MobileApp:
+            1. Instagram:
+                    extra methods:
+                        postPhoto()
+            2. Discord:
+                    extra methods:
+                        chat(String name)
+
+         */
+
+
+         
+
+
+                       
+
+
+

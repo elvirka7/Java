@@ -1,0 +1,40 @@
+
+
+
+
+
+
+6. Dog Task:
+		1. Create a class called Dog
+	            Attributes:
+	            	instance: breed, size, gender, age, color
+	            	statics: numberOfLegs, numberOfEyes, numberOfWings, isFriendly
+
+	            Add a constructor to initialized all the fields (instances)
+
+	            Methods:
+	            	eat()
+	            	sleep()
+	            	play()
+	                toString()
+
+
+7. Car Task:
+		1. Create a class called Car
+            Attributes:
+                 instance: make, model, color, year, price
+                 static: numberOfWheels, hasBattery, hasSeats
+
+            Add a constructor to initialize all the fields
+
+           Methods:
+                drive()
+                toString()
+
+
+
+
+
+
+
+

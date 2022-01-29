@@ -1,0 +1,56 @@
+                Topics:
+                - String Examples with Loops
+                - MultiBranch If :              If(...){
+							                    }else If(...){
+							                    }else{
+							                    }
+
+
+                1.
+				Given a string, return a "rotated left 2" version where the first 2 chars are moved to the end.
+				The string length will be at least 2.
+
+                input :"Hello" -> "lloHe"
+                input :"java" → "vaja"
+                input :"Hi" → "Hi"
+
+                2.
+                Given a string, if the string begins with "red" or "blue" print that color string,
+                otherwise print the empty string.
+
+                input :"redxx" → "red"
+                input :"xxred" → ""
+                input :"blueTimes" → "blue"
+
+                3.
+                Given a string, if the first or last chars are 'x', print the string without those 'x' chars,
+                and otherwise print the string unchanged.
+                (do with for loop)
+
+                input :"xHix" → "Hi"
+                input :"xHi" → "Hi"
+                input :"Hxix" → "Hxi"
+
+
+
+                4.
+                Given a non-empty string and an int n, return a new string where the char at index n has been removed.
+                The value of n will be a valid index of a char in the original string
+                (do with for loop)
+                input:  kitchen and 2
+                output: kithen
+                input:  kitchen and 0
+                output: itchen
+
+               5.
+                 Given a string password. Encrypt with "x" a given password
+                 and print.
+                 (do with for loop)
+                 password: cydeo
+                 encrypt with char :x
+                 output:cxyxdxexox
+
+
+
+
+
